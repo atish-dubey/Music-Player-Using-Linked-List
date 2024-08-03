@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efficient Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container flex">
+    <div class="player flex">
+      <div class="info flex">
+        <div id="trackTitle" class="track-title">Track Title</div>
+      </div>
+      <div class="controls flex">
+        <div id="prevBtn" class="btn previous"><i class="fa fa-step-backward fa-2x"></i></div>
+        <div id="playPauseBtn" class="btn play-pause"><i class="fa fa-play-circle fa-5x" id="playPauseIcon"></i></div>
+        <div id="nextBtn" class="btn next"><i class="fa fa-step-forward fa-2x"></i></div>
+      </div>
+      <div class="timer flex">
+        <div id="currentTime" class="current">00:00</div>
+        <input type="range" id="progressSlider" class="progress" value="0" min="0" max="100">
+        <div id="durationTime" class="duration">00:00</div>
+      </div>
+      <div class="volume flex">
+        <i class="fas fa-volume-down"></i>
+        <input type="range" id="volumeSlider" class="volume-slider" value="50" min="0" max="100">
+        <i class="fas fa-volume-up"></i>
+      </div>
+    </div>
+  </div>
+  <script src="utils.js"></script>
+  <script src="linkedList.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
